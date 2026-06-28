@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ClearLabel — EU AI Act Artikel 50: Readiness-Check & Compliance-Toolkit</title>
-<meta name="description" content="Kostenloser Check: Welche Transparenzpflichten nach Artikel 50 EU AI Act treffen Ihr Unternehmen vor dem 2. August 2026? Persönlicher Readiness-Report plus fertiges Toolkit für Offenlegung und Dokumentation.">
+<title>ClearLabel — EU AI Act Artikel 50: Fertige Vorlagen & Compliance-Toolkit</title>
+<meta name="description" content="Nicht stundenlang mit ChatGPT basteln: fertige, rechtlich geprüfte Texte, Checklisten und Vorlagen für die EU-AI-Act-Artikel-50-Pflichten (Deadline 2. August 2026). Kostenloser Readiness-Check. 14 Tage Geld-zurück-Garantie.">
 <meta name="keywords" content="EU AI Act Artikel 50, KI Transparenzpflichten, Chatbot Offenlegung, KI-Inhalte kennzeichnen, Deepfake Offenlegung, AI Act Compliance Toolkit, 2. August 2026">
-<meta property="og:title" content="Sind Sie bereit für EU AI Act Artikel 50? (2. Aug 2026)">
-<meta property="og:description" content="Kostenloser 2-Minuten-Readiness-Check + fertiges Toolkit für Offenlegung und Dokumentation.">
+<meta property="og:title" content="EU AI Act Artikel 50: fertige Vorlagen statt ChatGPT-Basteln">
+<meta property="og:description" content="Kostenloser Readiness-Check + fertiges Toolkit. 14 Tage Geld-zurück-Garantie.">
 <meta property="og:type" content="website">
 <link rel="alternate" hreflang="de" href="./index.html">
 <link rel="alternate" hreflang="en" href="./en.html">
@@ -17,33 +17,54 @@
   :root{
     --bg:#f6f8fc; --card:#ffffff; --ink:#0f1b34; --ink2:#43506b; --muted:#6b7896;
     --line:#e2e8f4; --brand:#1453c4; --brand-d:#0e3d96; --accent:#0a7d57;
-    --warn:#b45309; --bad:#b91c1c; --good:#0a7d57; --radius:14px;
+    --warn:#b45309; --bad:#b91c1c; --good:#0a7d57; --gold:#b7791f; --radius:14px;
   }
   *{box-sizing:border-box}
   body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
   a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+  img{max-width:100%}
   .wrap{max-width:1000px;margin:0 auto;padding:0 22px}
   header{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:10px;flex-wrap:wrap}
   .logo{font-weight:800;font-size:20px;letter-spacing:-.3px;color:var(--ink);display:flex;gap:8px;align-items:center}
   .logo b{color:var(--brand)}
-  .nav-links a{color:var(--ink2);font-size:14px;margin-left:20px;font-weight:600}
+  .nav-links{display:flex;align-items:center;flex-wrap:wrap}
+  .nav-links a{color:var(--ink2);font-size:14px;margin-left:18px;font-weight:600}
   .nav-cta{background:var(--brand);color:#fff!important;padding:8px 16px;border-radius:8px;font-weight:700}
   .nav-cta:hover{background:var(--brand-d);text-decoration:none}
+  @media(max-width:620px){.nav-links a{margin-left:12px;font-size:13px}}
   .deadline-bar{background:#fff7ed;border-bottom:1px solid #fed7aa;color:var(--warn);
     text-align:center;font-size:13.5px;font-weight:600;padding:8px}
   .hero{text-align:center;padding:48px 0 18px}
   .kicker{display:inline-block;background:#eef3ff;color:var(--brand-d);font-weight:700;font-size:13px;
     padding:6px 14px;border-radius:999px;letter-spacing:.2px}
-  h1{font-size:clamp(28px,4.6vw,44px);line-height:1.12;letter-spacing:-1px;margin:16px auto;max-width:780px}
-  .sub{color:var(--ink2);font-size:clamp(16px,2.2vw,19px);max-width:640px;margin:0 auto}
-  .trust{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin:22px 0 0;color:var(--muted);font-size:13.5px}
+  h1{font-size:clamp(27px,4.6vw,44px);line-height:1.12;letter-spacing:-1px;margin:16px auto;max-width:800px}
+  .sub{color:var(--ink2);font-size:clamp(16px,2.2vw,19px);max-width:660px;margin:0 auto}
+  .hero-cta{display:inline-flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:22px 0 10px}
+  .guarantee-line{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:700;font-size:14.5px;margin-top:6px}
+  .trust{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin:18px 0 0;color:var(--muted);font-size:13.5px}
   .trust span{display:inline-flex;gap:6px;align-items:center}
   .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
     box-shadow:0 1px 2px rgba(16,27,52,.04),0 12px 32px rgba(16,27,52,.06)}
-  /* ===== checker ===== */
-  .checker{padding:26px;margin:30px 0}
+  section{padding:34px 0}
+  .sec-h{text-align:center;max-width:680px;margin:0 auto 26px}
+  .sec-h h2{font-size:clamp(23px,3.2vw,30px);margin:0 0 8px;letter-spacing:-.5px}
+  .sec-h p{color:var(--ink2);margin:0}
+  /* compare ChatGPT vs ClearLabel */
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:720px){.vs{grid-template-columns:1fr}}
+  .vs .card{padding:24px}
+  .vs h3{margin:0 0 14px;font-size:18px;display:flex;align-items:center;gap:8px}
+  .vs ul{list-style:none;padding:0;margin:0}
+  .vs li{padding:9px 0 9px 28px;position:relative;font-size:14.5px;border-top:1px solid var(--line)}
+  .vs li:first-child{border-top:none}
+  .vs.bad li::before{content:"✕";position:absolute;left:0;color:var(--bad);font-weight:800}
+  .vs.good li::before{content:"✓";position:absolute;left:0;color:var(--good);font-weight:800}
+  .vs .win{border:2px solid var(--accent)}
+  .badge-win{display:inline-block;background:#ecfdf5;color:var(--good);font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:99px;margin-left:6px}
+  /* checker */
+  .checker{padding:26px;margin:8px 0}
   .checker h2{margin:0 0 4px;font-size:23px}
   .checker .lead{color:var(--ink2);margin:0 0 18px;font-size:15px}
   .progress{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin-bottom:22px}
@@ -57,7 +78,6 @@
   .qnav{display:flex;justify-content:space-between;align-items:center;margin-top:20px}
   .qnav button{background:none;border:none;color:var(--muted);font-size:14px;cursor:pointer;font-weight:600}
   .qnav .step{color:var(--muted);font-size:13px}
-  /* ===== result ===== */
   .ringbox{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
   .ring{--p:0;--rc:var(--brand);width:104px;height:104px;border-radius:50%;flex:none;
     background:conic-gradient(var(--rc) calc(var(--p)*1%),#e8eefc 0);display:grid;place-items:center;position:relative}
@@ -67,29 +87,20 @@
   .verdict small{display:block;font-weight:500;color:var(--ink2);font-size:14px;margin-top:3px}
   .obl{list-style:none;padding:0;margin:18px 0 0}
   .obl li{border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:9px;padding:13px 15px;margin-bottom:10px}
-  .obl li.na{border-left-color:#cbd5e6;opacity:.62}
-  .obl b{display:block;font-size:15px}
-  .obl span{color:var(--ink2);font-size:14px}
+  .obl b{display:block;font-size:15px}.obl span{color:var(--ink2);font-size:14px}
   .tag{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}
-  .tag.aug{background:#fef2f2;color:var(--bad)}
-  .tag.dec{background:#fff7ed;color:var(--warn)}
-  .tag.ok{background:#ecfdf5;color:var(--good)}
-  /* ===== capture ===== */
+  .tag.aug{background:#fef2f2;color:var(--bad)}.tag.dec{background:#fff7ed;color:var(--warn)}
   .cap{margin-top:22px;padding:18px;background:#f7faff;border:1px dashed #b9cdf2;border-radius:12px}
   .cap h4{margin:0 0 6px}.cap p{margin:0 0 12px;color:var(--ink2);font-size:14px}
   .capform{display:flex;gap:10px;flex-wrap:wrap}
   .capform input{flex:1;min-width:220px;padding:12px 14px;border:1px solid var(--line);border-radius:9px;font-size:15px}
   .btn{display:inline-block;cursor:pointer;border:none;border-radius:9px;padding:13px 20px;font-weight:700;
-    font-size:15px;background:var(--brand);color:#fff}
+    font-size:15px;background:var(--brand);color:#fff;text-align:center}
   .btn:hover{background:var(--brand-d);text-decoration:none}
   .btn.lg{padding:15px 26px;font-size:16px}
   .btn.ghost{background:#fff;color:var(--brand);border:1.5px solid var(--brand)}
-  /* ===== pricing ===== */
-  section{padding:30px 0}
-  .sec-h{text-align:center;max-width:660px;margin:0 auto 26px}
-  .sec-h h2{font-size:28px;margin:0 0 8px;letter-spacing:-.5px}
-  .sec-h p{color:var(--ink2);margin:0}
-  .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  /* pricing */
+  .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
   @media(max-width:760px){.price-grid{grid-template-columns:1fr}}
   .plan{padding:26px;display:flex;flex-direction:column}
   .plan.feat{border:2px solid var(--brand);position:relative}
@@ -97,32 +108,42 @@
     color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:99px}
   .plan h3{margin:0 0 4px;font-size:19px}.plan .for{color:var(--muted);font-size:13.5px;margin:0 0 14px}
   .plan .amt{font-size:36px;font-weight:800}.plan .amt s{color:var(--muted);font-size:20px;font-weight:500;margin-right:8px}
-  .plan ul{list-style:none;padding:0;margin:16px 0 22px;flex:1}
+  .plan ul{list-style:none;padding:0;margin:16px 0 18px;flex:1}
   .plan li{padding:7px 0 7px 26px;position:relative;font-size:14.5px;color:var(--ink2)}
   .plan li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+  .mb-badge{display:inline-flex;align-items:center;gap:7px;justify-content:center;background:#ecfdf5;color:var(--good);
+    border:1px solid #b7f0d8;border-radius:9px;padding:8px 10px;font-size:13px;font-weight:700;margin-top:10px}
+  /* content table */
+  .ctable{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .ctable th,.ctable td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
+  .ctable th{background:#f3f6fc;font-size:13px;color:var(--ink2)}
+  .ctable td.c{text-align:center}
+  .ctable .yes{color:var(--good);font-weight:800}.ctable .no{color:#c2c9d6}
+  .ctable tr:last-child td{border-bottom:none}
   .feat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   @media(max-width:760px){.feat-row{grid-template-columns:1fr}}
   .feat-row .card{padding:22px}.feat-row h4{margin:0 0 6px;font-size:16px}.feat-row p{margin:0;color:var(--ink2);font-size:14px}
   details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 18px;margin-bottom:10px}
   summary{cursor:pointer;font-weight:700;padding:14px 0;font-size:15.5px}
   details p{color:var(--ink2);font-size:14.5px;margin:0 0 14px}
-  .disclaimer{background:#fbfcfe;border:1px solid var(--line);border-radius:12px;padding:18px 20px;
-    color:var(--muted);font-size:13px;margin:26px 0}
+  .disclaimer{background:#fbfcfe;border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--muted);font-size:13px;margin:26px 0}
   footer{border-top:1px solid var(--line);background:var(--card);padding:28px 0;color:var(--muted);font-size:13px;text-align:center}
+  footer a{margin:0 4px}
   .hidden{display:none}
 </style>
 </head>
 <body>
-<div class="deadline-bar" id="deadlinebar">⏳ Die Transparenzpflichten nach Artikel 50 EU AI Act gelten ab 2. August 2026 · eine Schonfrist bis 2. Dezember 2026 für die Kennzeichnung bestehender KI-Inhalte ist <u>vorgeschlagen</u> (Digital Omnibus — noch nicht beschlossen)</div>
+<div class="deadline-bar" id="deadlinebar">⏳ EU AI Act Artikel 50: Transparenzpflichten ab 2. August 2026 · maschinenlesbare Kennzeichnung bestehender KI-Inhalte bis 2. Dezember 2026 (<u>vorgeschlagen</u>, Digital Omnibus)</div>
 <header>
   <div class="wrap nav">
     <div class="logo">🏷️ Clear<b>Label</b></div>
     <div class="nav-links">
+      <a href="#vergleich">Warum nicht ChatGPT?</a>
       <a href="#check">Gratis-Check</a>
-      <a href="#pricing">Toolkit</a>
+      <a href="#preise">Pakete</a>
       <a href="#faq">FAQ</a>
       <a href="en.html" title="English version">EN</a>
-      <a class="nav-cta" href="#pricing">Jetzt vorbereiten</a>
+      <a class="nav-cta" href="#preise">Jetzt absichern</a>
     </div>
   </div>
 </header>
@@ -130,19 +151,56 @@
 <div class="wrap">
   <section class="hero">
     <span class="kicker">EU AI Act · Artikel 50 · Transparenz</span>
-    <h1>Gilt der EU AI Act für Ihr Unternehmen — und was müssen Sie bis zum 2. August 2026 tun?</h1>
-    <p class="sub">Die meisten Unternehmen mit einem Chatbot oder mit KI-erstellten Inhalten fallen jetzt unter die Transparenzpflichten von Artikel 50. Machen Sie den kostenlosen 2-Minuten-Check und sehen Sie genau, welche Pflichten Sie treffen — und schließen Sie die Lücken mit einem fertigen Toolkit.</p>
+    <h1 id="hero-h1">Nicht stundenlang mit ChatGPT basteln. Hol dir die fertigen, rechtlich geprüften Vorlagen.</h1>
+    <p class="sub" id="hero-sub">Chatbot betrieben oder KI-Inhalte erstellt? Dann gelten ab 2. August 2026 die Transparenzpflichten von Artikel 50. Du brauchst jetzt die richtigen Texte, Checklisten und Vorlagen — sofort nutzbar, statt sie dir selbst zusammenzusuchen.</p>
+    <div class="hero-cta">
+      <a class="btn lg" id="hero-cta" href="#preise">Jetzt absichern →</a>
+      <a class="btn lg ghost" href="#check">Erst kostenlos prüfen</a>
+    </div>
+    <div><span class="guarantee-line">🛡️ 14 Tage Geld-zurück-Garantie — risikofrei testen</span></div>
     <div class="trust">
-      <span>✓ Kostenlos, kein Login nötig</span>
+      <span>✓ Rechtlich geprüfte Vorlagen</span>
       <span>✓ Auf Basis offizieller EU-Quellen</span>
-      <span>✓ Klar verständlich, sofort umsetzbar</span>
+      <span>✓ Sofort nutzbar in 5 Minuten</span>
     </div>
   </section>
 
-  <!-- ============ INTERAKTIVER CHECKER ============ -->
+  <!-- ============ CHATGPT VS CLEARLABEL ============ -->
+  <section id="vergleich">
+    <div class="sec-h">
+      <h2>Warum nicht einfach selbst mit ChatGPT?</h2>
+      <p>Kannst du — wenn du Stunden Zeit, juristisches Gespür und Lust auf Fehlerrisiko hast. Oder du nimmst das Fertige.</p>
+    </div>
+    <div class="vs">
+      <div class="card bad">
+        <h3>🤖 Selbst mit ChatGPT / Claude</h3>
+        <ul class="vs bad">
+          <li>Stundenlanges Prompten, Recherchieren, Gegenprüfen</li>
+          <li>Risiko erfundener oder veralteter Rechtsstände (Halluzinationen)</li>
+          <li>Du musst selbst wissen, welche der 4 Pflichten dich treffen</li>
+          <li>Keine fertigen Formulierungen in DE/EN/FR/IT</li>
+          <li>Keine Dokumentation, kein Register, kein Nachweis</li>
+          <li>Bei Gesetzesänderung: alles nochmal selbst machen</li>
+        </ul>
+      </div>
+      <div class="card good win">
+        <h3>🏷️ ClearLabel-Toolkit <span class="badge-win">klar im Vorteil</span></h3>
+        <ul class="vs good">
+          <li>Fertige Texte: kopieren, einsetzen, fertig in 5 Minuten</li>
+          <li>Auf Basis offizieller EU-Quellen erstellt und geprüft</li>
+          <li>Readiness-Check sagt dir exakt, welche Pflichten gelten</li>
+          <li>Offenlegungs-Texte in vier Sprachen (DE/EN/FR/IT)</li>
+          <li>Compliance-Register & Dokumentations-Vorlagen inklusive</li>
+          <li>Lifetime-Updates: Änderungen nach 2. August automatisch</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHECKER ============ -->
   <div class="card checker" id="check">
-    <h2>Artikel-50-Readiness-Check</h2>
-    <p class="lead">7 kurze Fragen. Wir ordnen Ihre Antworten den tatsächlichen Pflichten in Artikel 50 zu. Es wird nichts hochgeladen — alles läuft in Ihrem Browser.</p>
+    <h2>Kostenloser Artikel-50-Readiness-Check</h2>
+    <p class="lead">7 kurze Fragen. Wir ordnen deine Antworten den tatsächlichen Pflichten in Artikel 50 zu. Es wird nichts hochgeladen — alles läuft in deinem Browser.</p>
     <div class="progress"><i id="bar"></i></div>
     <div id="qbox"></div>
     <div class="qnav">
@@ -154,115 +212,169 @@
   <!-- ============ FEATURES ============ -->
   <section>
     <div class="feat-row">
-      <div class="card"><h4>🏷️ Offenlegungs-Texte</h4><p>Copy-paste-fertige Chatbot-Hinweise, KI-Inhaltskennzeichnungen und Deepfake-Offenlegungen in DE, EN, FR und IT.</p></div>
-      <div class="card"><h4>📄 Dokumentations-Vorlagen</h4><p>Ein Artikel-50-Compliance-Register und interne Nachweise, die Sie ablegen können, um gutgläubiges Handeln zu belegen.</p></div>
-      <div class="card"><h4>🛠️ Umsetzungs-Anleitungen</h4><p>Wo die Hinweise platziert werden und wie Sie die maschinenlesbare Kennzeichnung angehen — Schritt für Schritt.</p></div>
+      <div class="card"><h4>⚡ Sofort nutzbar</h4><p>Copy-paste-fertige Chatbot-Hinweise, KI-Labels und Deepfake-Offenlegungen — in 5 Minuten umgesetzt.</p></div>
+      <div class="card"><h4>⚖️ Rechtlich geprüft</h4><p>Auf Basis von Artikel 50, dem Verhaltenskodex und offiziellen EU-Quellen — nicht selbst zusammengebastelt.</p></div>
+      <div class="card"><h4>🔄 Lifetime-Updates</h4><p>Entwickelt sich die Kommissions-Leitlinie weiter, bekommst du die Aktualisierung kostenlos.</p></div>
     </div>
   </section>
 
-  <!-- ============ PRICING ============ -->
-  <section id="pricing">
+  <!-- ============ PREISE ============ -->
+  <section id="preise">
     <div class="sec-h">
-      <h2>Das Artikel-50-Compliance-Toolkit</h2>
-      <p>Einmaliger Kauf. Sofort-Download. Alles, um die Transparenzpflichten umzusetzen — ohne Agenturpreise.</p>
+      <h2>Wähle dein Paket</h2>
+      <p>Einmaliger Kauf. Sofort-Zugang. 14 Tage Geld-zurück-Garantie — ohne Wenn und Aber.</p>
     </div>
     <div class="price-grid">
       <div class="card plan">
         <h3>Starter</h3>
         <p class="for">Für einen einzelnen Chatbot oder KI-Content-Workflow</p>
-        <div class="amt">CHF 49</div>
+        <div class="amt">CHF 79</div>
         <ul>
-          <li>Artikel-50-Leitfaden in Klartext (Rollen: Anbieter & Betreiber)</li>
-          <li>Chatbot-KI-Offenlegungs-Texte (DE/EN/FR/IT)</li>
-          <li>Formulierungen für KI-Inhaltskennzeichnung & Deepfake-Offenlegung</li>
-          <li>Readiness-Checkliste (PDF)</li>
+          <li>Artikel-50-Leitfaden in Klartext (Anbieter & Betreiber)</li>
+          <li>16 Offenlegungs-Textbausteine (DE/EN/FR/IT)</li>
+          <li>3 Checklisten inkl. Readiness- & Deadline-Checkliste</li>
           <li>Fristen-Kalender (2. Aug & 2. Dez 2026)</li>
+          <li>Formate: PDF + Word + Copy-paste</li>
         </ul>
-        <a class="btn ghost" id="buy-starter" href="#">Starter holen →</a>
+        <a class="btn ghost" id="buy-starter" href="#">Starter für CHF 79 →</a>
+        <div class="mb-badge">🛡️ 14 Tage Geld-zurück-Garantie</div>
       </div>
       <div class="card plan feat">
-        <div class="badge">Am vollständigsten</div>
+        <div class="badge">Empfohlen — am vollständigsten</div>
         <h3>Pro-Toolkit</h3>
         <p class="for">Für Unternehmen mit mehreren KI-Berührungspunkten</p>
-        <div class="amt"><s>CHF 199</s>CHF 129</div>
+        <div class="amt"><s>CHF 299</s>CHF 199</div>
         <ul>
           <li>Alles aus Starter</li>
-          <li>Artikel-50-<b>Compliance-Register & Dokumentations-Vorlagen</b></li>
-          <li>Anleitung zur maschinenlesbaren Kennzeichnung</li>
-          <li>Entscheidungs-Flussdiagramm je Inhaltstyp (Text, Bild, Audio, Video)</li>
-          <li>Interne Mitarbeiter-Übersicht + Verantwortlichkeits-Matrix</li>
-          <li>Kostenlose Updates, wenn sich die Leitlinien der Kommission weiterentwickeln</li>
+          <li>3 Dokumentations-Vorlagen: Compliance-Register, Verantwortlichkeits-Matrix, Mitarbeiter-One-Pager</li>
+          <li>5 HTML-Snippets (Chatbot-Banner, KI-Label-Badge u. a.)</li>
+          <li>3 E-Mail-/Kommunikations-Templates (KI-Vendor, Roll-out, Kunden-FAQ)</li>
+          <li>Entscheidungs-Flussdiagramm je Inhaltstyp</li>
+          <li>Lifetime-Updates + E-Mail-Support (48 h Antwortzeit)</li>
         </ul>
-        <a class="btn lg" id="buy-pro" href="#">Pro-Toolkit holen →</a>
+        <a class="btn lg" id="buy-pro" href="#">Pro-Toolkit für CHF 199 →</a>
+        <div class="mb-badge">🛡️ 14 Tage Geld-zurück-Garantie</div>
       </div>
     </div>
+
+    <!-- content comparison -->
+    <div style="margin-top:30px">
+      <div class="sec-h"><h2>Was genau ist drin?</h2><p>Konkrete Inhalte — keine leeren Versprechen.</p></div>
+      <table class="ctable">
+        <thead><tr><th>Inhalt</th><th class="c">Starter</th><th class="c">Pro</th></tr></thead>
+        <tbody>
+          <tr><td>Artikel-50-Leitfaden (Klartext, Anbieter/Betreiber)</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Offenlegungs-Textbausteine (Chatbot, KI-Label, Deepfake, Public-Interest × DE/EN/FR/IT)</td><td class="c">16</td><td class="c">16</td></tr>
+          <tr><td>Checklisten (Readiness, Pre-Deadline, Rollen)</td><td class="c">3</td><td class="c">3</td></tr>
+          <tr><td>Fristen-Kalender (2. Aug / 2. Dez 2026)</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Dokumentations-Vorlagen (Register, Matrix, One-Pager)</td><td class="c no">—</td><td class="c">3</td></tr>
+          <tr><td>HTML-Snippets (Banner, Label-Badge u. a.)</td><td class="c no">—</td><td class="c">5</td></tr>
+          <tr><td>E-Mail-/Kommunikations-Templates</td><td class="c no">—</td><td class="c">3</td></tr>
+          <tr><td>Entscheidungs-Flussdiagramm je Inhaltstyp</td><td class="c no">—</td><td class="c yes">✓</td></tr>
+          <tr><td>Formate</td><td class="c">PDF · Word · HTML</td><td class="c">PDF · Word · HTML</td></tr>
+          <tr><td>Lifetime-Updates</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>E-Mail-Support (48 h)</td><td class="c no">—</td><td class="c yes">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+
     <div class="disclaimer" id="disclaimer">
-      <b>Wichtig — keine Rechtsberatung.</b> ClearLabel stellt informative Vorlagen und allgemeine Hinweise bereit, die Ihnen helfen, die Transparenzpflichten nach Artikel 50 der Verordnung (EU) 2024/1689 (EU AI Act) zu verstehen und sich darauf vorzubereiten. Dies ist keine Rechtsberatung und begründet kein Mandatsverhältnis. Ob und wie die Pflichten gelten, hängt von Ihren konkreten Umständen sowie von den sich entwickelnden Leitlinien der Kommission und dem Verhaltenskodex ab. Für verbindliche Beurteilungen konsultieren Sie eine qualifizierte Anwältin oder einen qualifizierten Anwalt. Primärquellen: der
+      <b>Wichtig — keine Rechtsberatung.</b> ClearLabel stellt informative Vorlagen und allgemeine Hinweise zu den Transparenzpflichten nach Artikel 50 der Verordnung (EU) 2024/1689 (EU AI Act) bereit. Dies ist keine Rechtsberatung und begründet kein Mandatsverhältnis. Ob und wie die Pflichten gelten, hängt von deinen konkreten Umständen sowie von den sich entwickelnden Leitlinien der Kommission ab. Für verbindliche Beurteilungen konsultiere eine qualifizierte Anwältin oder einen qualifizierten Anwalt. Quellen: der
       <a href="https://artificialintelligenceact.eu/article/50/" target="_blank" rel="noopener">Wortlaut von Artikel 50</a>,
-      der <a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">Verhaltenskodex zu KI-generierten Inhalten</a> und der
+      der <a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">Verhaltenskodex</a> und der
       <a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50" target="_blank" rel="noopener">AI Act Service Desk</a>.
     </div>
   </section>
 
-  <!-- ============ FAQ (SEO/GEO answer-strukturiert) ============ -->
+  <!-- ============ FAQ ============ -->
   <section id="faq">
-    <div class="sec-h"><h2>EU AI Act Artikel 50 — kurze Antworten</h2></div>
-    <details open><summary>Was ist Artikel 50 des EU AI Act?</summary><p>Artikel 50 regelt die <b>Transparenzpflichten</b> des EU AI Act. Er verlangt, dass Menschen erkennen, wenn sie mit einem KI-System interagieren (z. B. einem Chatbot), dass KI-erzeugte oder KI-manipulierte synthetische Inhalte als solche gekennzeichnet werden, dass Deepfakes offengelegt werden und dass KI-erzeugte Texte zur Information der Öffentlichkeit über Angelegenheiten von öffentlichem Interesse gekennzeichnet werden — außer ein Mensch hat die redaktionelle Verantwortung übernommen.</p></details>
-    <details><summary>Ab wann gilt Artikel 50?</summary><p>Die Transparenzpflichten nach Artikel 50 gelten ab <b>2. August 2026</b> (gemäß Artikel 113). Gesondert davon würde der <b>Digital Omnibus</b> — auf den sich EU-Parlament und Rat am <b>7. Mai 2026 vorläufig geeinigt</b> haben — generativen KI-Systemen, die vor dem 2. August 2026 bereits auf dem Markt sind, bis <b>2. Dezember 2026</b> Zeit für die maschinenlesbare Kennzeichnung nach Artikel 50(2) geben. Diese Verlängerung ist <b>noch nicht beschlossen</b> (noch ausstehende förmliche Annahme und Veröffentlichung im Amtsblatt). Behandeln Sie den 2. Dez 2026 als erwartet, aber nicht final, und prüfen Sie ihn erneut, bevor Sie sich darauf verlassen.</p></details>
-    <details><summary>Gilt Artikel 50 auch für mein kleines Unternehmen?</summary><p>Wenn Ihr Produkt oder Ihre Dienstleistung Personen in der EU erreicht und Sie einen Chatbot betreiben, Marketing-Inhalte mit KI erstellen oder KI-erzeugte Medien veröffentlichen, gilt Artikel 50 sehr wahrscheinlich — unabhängig von der Unternehmensgröße. Er ist nicht auf „hochriskante" KI beschränkt. Der kostenlose Check oben zeigt, welche konkreten Pflichten durch das, was Sie tatsächlich tun, ausgelöst werden.</p></details>
-    <details><summary>Was ist der Unterschied zwischen „Anbieter" und „Betreiber"?</summary><p>Ein <b>Anbieter</b> entwickelt ein KI-System oder bringt es auf den Markt (z. B. Sie bauen einen Chatbot). Ein <b>Betreiber</b> nutzt ein KI-System in eigener Verantwortung (z. B. Sie veröffentlichen KI-erzeugte Bilder). Die Pflichten unterscheiden sich: Anbieter kümmern sich um Interaktions-Hinweise und Ausgabe-Kennzeichnung; Betreiber um Deepfake- und Öffentlichkeits-Offenlegung. Wenn Sie nur Drittanbieter-Tools wie ChatGPT <b>nutzen</b>, sind Sie meist Betreiber.</p></details>
-    <details><summary>Gibt es Strafen bei Nichteinhaltung?</summary><p>Der AI Act sieht für Verstöße gegen die Transparenzpflichten Geldbußen vor — bis zu <b>15 Mio. EUR oder 3 % des weltweiten Jahresumsatzes</b>, je nachdem, welcher Betrag höher ist (Artikel 99), verhängt durch nationale Behörden. In der Praxis ist das kurzfristige Risiko für die meisten KMU eher eine Beschwerde oder Anfrage plus Reputationsschaden. Klare Offenlegungen und Dokumentation sind ein günstiger Weg, gutgläubiges Handeln zu belegen.</p></details>
+    <div class="sec-h"><h2>Häufige Fragen</h2></div>
+    <details open><summary>Wie funktioniert die 14-Tage-Geld-zurück-Garantie?</summary><p>Wenn das Toolkit nicht zu dir passt, schreib uns innerhalb von 14 Tagen nach dem Kauf eine kurze E-Mail an info@clearlabel.ch — du bekommst den vollen Betrag zurück, ohne Begründung. Freiwillige Garantie, risikofrei.</p></details>
+    <details><summary>Warum nicht einfach selbst mit ChatGPT?</summary><p>Kannst du — aber du brauchst Stunden, musst jeden Rechtsstand selbst gegenprüfen (KI-Modelle halluzinieren), selbst herausfinden welche Pflichten gelten, und hast am Ende keine fertigen Mehrsprach-Vorlagen, kein Register und keinen Nachweis. ClearLabel liefert das Fertige, geprüft und sofort nutzbar.</p></details>
+    <details><summary>Was ist Artikel 50 des EU AI Act?</summary><p>Artikel 50 regelt die Transparenzpflichten: Menschen müssen erkennen, wenn sie mit einer KI interagieren (Chatbot), KI-erzeugte Inhalte müssen gekennzeichnet werden, Deepfakes offengelegt, und KI-Texte zu Themen von öffentlichem Interesse gekennzeichnet werden (ausser bei menschlicher redaktioneller Verantwortung).</p></details>
+    <details><summary>Ab wann gilt Artikel 50?</summary><p>Die Transparenzpflichten gelten ab <b>2. August 2026</b> (Art. 113). Der Digital Omnibus (vorläufige Einigung 7. Mai 2026, noch nicht beschlossen) würde für die maschinenlesbare Kennzeichnung bereits bestehender KI-Inhalte bis 2. Dezember 2026 Zeit geben. Behandle den 2. Dez als erwartet, aber nicht final.</p></details>
+    <details><summary>Gibt es Strafen bei Nichteinhaltung?</summary><p>Ja — Geldbussen bis zu 15 Mio. EUR oder 3 % des weltweiten Jahresumsatzes (Art. 99), verhängt durch nationale Behörden. Für KMU ist das kurzfristige Risiko eher eine Beschwerde plus Reputationsschaden. Klare Offenlegungen und Dokumentation belegen gutgläubiges Handeln.</p></details>
   </section>
 </div>
 
 <footer>
   <div class="wrap">
     <div>© <span id="yr"></span> ClearLabel · Informatives Toolkit zur EU-AI-Act-Artikel-50-Readiness · Keine Rechtsberatung</div>
-    <div style="margin-top:8px"><a href="#check">Gratis-Check</a> · <a href="#pricing">Toolkit</a> · <a href="#faq">FAQ</a> · <a id="contact" href="#">Kontakt</a></div>
+    <div style="margin-top:8px">
+      <a href="impressum.html">Impressum</a> ·
+      <a href="datenschutz.html">Datenschutz</a> ·
+      <a href="agb.html">AGB</a> ·
+      <a href="kontakt.html">Kontakt</a> ·
+      <a href="en.html">English</a>
+    </div>
   </div>
 </footer>
 
 <script>
-/* ===================== CONFIG — zum Live-Schalten ausfüllen ===================== */
+/* ===================== CONFIG ===================== */
 const CONFIG = {
-  buyStarterUrl: "#",      // Stripe Payment Link / Gumroad-URL für Starter (CHF 49)
-  buyProUrl: "#",          // Stripe Payment Link / Gumroad-URL für Pro (CHF 129)
-  captureEndpoint: "",     // Formspree/Buttondown-Endpoint für den E-Mail-Report
-  contactEmail: "",        // im Footer angezeigt + Fallback
-  analyticsEndpoint: "",   // optionaler privacy-freundlicher Event-Sink; leer = nur lokal
+  buyStarterUrl: "#",      // Stripe Payment Link / Gumroad-URL fuer Starter (CHF 79)
+  buyProUrl: "#",          // Stripe Payment Link / Gumroad-URL fuer Pro (CHF 199)
+  captureEndpoint: "submit.php",  // eigener Hostpoint-Handler
+  contactEmail: "info@clearlabel.ch",
+  analyticsEndpoint: "",
   brand: "ClearLabel"
 };
 
-/* ===================== privacy-freundliches Tracking ===================== */
+/* ===================== A/B-Test (Hero) ===================== */
+const AB = (function(){
+  let v = null;
+  try { v = localStorage.getItem("cl_ab"); } catch(e){}
+  if(v !== "A" && v !== "B"){ v = Math.random() < 0.5 ? "A" : "B"; try{ localStorage.setItem("cl_ab", v); }catch(e){} }
+  return v;
+})();
+const HERO = {
+  A: { h1:"Nicht stundenlang mit ChatGPT basteln. Hol dir die fertigen, rechtlich geprüften Vorlagen.",
+       sub:"Chatbot betrieben oder KI-Inhalte erstellt? Dann gelten ab 2. August 2026 die Transparenzpflichten von Artikel 50. Du brauchst jetzt die richtigen Texte, Checklisten und Vorlagen — sofort nutzbar, statt sie dir selbst zusammenzusuchen.",
+       cta:"Jetzt absichern →" },
+  B: { h1:"Gilt der EU AI Act für dein Unternehmen — und was musst du bis 2. August 2026 tun?",
+       sub:"Die meisten Unternehmen mit Chatbot oder KI-Inhalten fallen jetzt unter Artikel 50. Mach den kostenlosen 2-Minuten-Check und schliesse die Lücken mit fertigen, rechtlich geprüften Vorlagen.",
+       cta:"Pakete ansehen →" }
+};
+(function(){
+  const h = HERO[AB] || HERO.A;
+  const e1=document.getElementById("hero-h1"), e2=document.getElementById("hero-sub"), ec=document.getElementById("hero-cta");
+  if(e1) e1.textContent=h.h1;
+  if(e2) e2.textContent=h.sub;
+  if(ec) ec.textContent=h.cta;
+})();
+
+/* ===================== Tracking ===================== */
 function track(ev, meta){
+  meta = meta || {}; meta.ab = AB;
   try{ const l=JSON.parse(localStorage.getItem("cl_events")||"[]");
-    l.push({ev,meta:meta||{},t:Date.now(),ref:document.referrer||"direct"});
+    l.push({ev,meta,t:Date.now(),ref:document.referrer||"direct"});
     localStorage.setItem("cl_events",JSON.stringify(l.slice(-500))); }catch(e){}
   if(CONFIG.analyticsEndpoint){ try{ navigator.sendBeacon(CONFIG.analyticsEndpoint,JSON.stringify({ev,meta,ts:Date.now()})); }catch(e){} }
 }
 
-/* ===================== der Readiness-Checker ===================== */
+/* ===================== Readiness-Checker ===================== */
 const QUESTIONS = [
-  { id:"eu",   q:"Erreichen Ihre Produkte oder Dienstleistungen Personen in der EU?",
-    hint:"Artikel 50 gilt danach, ob KI-Ergebnisse Personen in der EU erreichen — nicht danach, wo Ihr Unternehmen registriert ist.",
+  { id:"eu",   q:"Erreichen deine Produkte oder Dienstleistungen Personen in der EU?",
+    hint:"Artikel 50 gilt danach, ob KI-Ergebnisse Personen in der EU erreichen — nicht danach, wo dein Unternehmen registriert ist.",
     opts:[["yes","Ja — wir haben EU-Kunden oder -Nutzer"],["no","Nein — keinerlei EU-Bezug"]] },
-  { id:"chatbot", q:"Betreiben Sie einen Chatbot, virtuellen Assistenten oder eine KI, die direkt mit Menschen interagiert?",
+  { id:"chatbot", q:"Betreibst du einen Chatbot, virtuellen Assistenten oder eine KI, die direkt mit Menschen interagiert?",
     hint:"Support-Bots, Website-Assistenten, KI-Sprachagenten, KI-E-Mail-Antworten.",
     opts:[["yes","Ja"],["no","Nein"]] },
-  { id:"gen", q:"Erstellt Ihr Unternehmen Texte, Bilder, Audio oder Video mit KI-Tools?",
+  { id:"gen", q:"Erstellt dein Unternehmen Texte, Bilder, Audio oder Video mit KI-Tools?",
     hint:"Inklusive ChatGPT, Bild-/Videogeneratoren, KI-Voiceovers — für Marketing, Social Media, Produkt oder intern.",
-    opts:[["yes","Ja, regelmäßig"],["some","Gelegentlich"],["no","Nein"]] },
-  { id:"deepfake", q:"Veröffentlichen Sie KI-erzeugte oder KI-bearbeitete Bilder, Audio oder Video, die realistisch wirken?",
+    opts:[["yes","Ja, regelmässig"],["some","Gelegentlich"],["no","Nein"]] },
+  { id:"deepfake", q:"Veröffentlichst du KI-erzeugte oder KI-bearbeitete Bilder, Audio oder Video, die realistisch wirken?",
     hint:"Realistische synthetische oder manipulierte Medien, die ein Betrachter für echt halten könnte, gelten als sogenannte Deepfakes.",
     opts:[["yes","Ja"],["no","Nein"]] },
-  { id:"news", q:"Veröffentlichen Sie KI-erzeugte Texte, um die Öffentlichkeit über Nachrichten oder Angelegenheiten von öffentlichem Interesse zu informieren?",
+  { id:"news", q:"Veröffentlichst du KI-erzeugte Texte, um die Öffentlichkeit über Nachrichten oder Angelegenheiten von öffentlichem Interesse zu informieren?",
     hint:"Z. B. KI-gestützte Nachrichten, Artikel im öffentlichen Interesse. Reine Marketingtexte sind hier in der Regel nicht erfasst.",
     opts:[["yes","Ja"],["no","Nein"]] },
   { id:"prelive", q:"Sind diese KI-Systeme oder -Inhalte bereits jetzt, vor dem 2. August 2026, live?",
-    hint:"Das beeinflusst, ob die vorgeschlagene Schonfrist bis 2. Dezember 2026 für die maschinenlesbare Kennzeichnung für Sie relevant ist.",
+    hint:"Das beeinflusst, ob die vorgeschlagene Schonfrist bis 2. Dezember 2026 für die maschinenlesbare Kennzeichnung für dich relevant ist.",
     opts:[["yes","Ja, bereits live"],["no","Nein, Start später / noch nicht"]] },
-  { id:"done", q:"Haben Sie KI-Offenlegungen, Inhaltskennzeichnung und interne Dokumentation bereits umgesetzt?",
-    hint:"Seien Sie ehrlich — das bestimmt Ihren Readiness-Score.",
+  { id:"done", q:"Hast du KI-Offenlegungen, Inhaltskennzeichnung und interne Dokumentation bereits umgesetzt?",
+    hint:"Sei ehrlich — das bestimmt deinen Readiness-Score.",
     opts:[["done","Ja, alles vorhanden"],["some","Teilweise"],["none","Noch nicht"]] }
 ];
 
@@ -287,36 +399,31 @@ backBtn.addEventListener("click",()=>{ if(step>0){step--;renderQ();} });
 function showResult(){
   bar.style.width="100%"; backBtn.classList.add("hidden"); stepnum.textContent="";
   track("check_complete",answers);
-
-  // gar nicht im Anwendungsbereich
   if(answers.eu==="no"){
     qbox.innerHTML='<div class="ringbox"><div class="ring" style="--p:100;--rc:var(--good)"><b>—</b></div>'+
       '<div><div class="verdict" style="color:var(--good)">Voraussichtlich nicht betroffen</div>'+
-      '<small>Sie haben keinen EU-Bezug angegeben. Artikel 50 greift, wenn KI-Ergebnisse Personen in der EU erreichen. Falls sich das ändert, führen Sie den Check erneut durch.</small></div></div>'+
-      '<p style="color:var(--muted);font-size:14px;margin-top:16px">Wenn Sie später in die EU expandieren, würden die untenstehenden Pflichten gelten.</p>';
+      '<small>Du hast keinen EU-Bezug angegeben. Artikel 50 greift, wenn KI-Ergebnisse Personen in der EU erreichen. Falls sich das ändert, führe den Check erneut durch.</small></div></div>';
     return;
   }
-
   const obligations=[];
-  if(answers.chatbot==="yes") obligations.push(["aug","Nutzer darüber informieren, dass sie mit einer KI interagieren","Ihr Chatbot/Assistent muss klar offenlegen, dass es sich um ein KI-System handelt — spätestens bei der ersten Interaktion (außer es ist für eine verständige Person offensichtlich). Anbieterpflicht, Art. 50(1)."]);
-  if(answers.gen==="yes"||answers.gen==="some") obligations.push(["dec","KI-Inhalte maschinenlesbar kennzeichnen","Synthetische Texte, Bilder, Audio oder Video müssen maschinenlesbar als künstlich erzeugt/manipuliert gekennzeichnet werden (Art. 50(2)). Das bindet den <b>Anbieter</b> des generativen Systems. Wenn Sie nur Drittanbieter-Tools <b>nutzen</b> (z. B. ChatGPT), sind Sie meist Betreiber — stellen Sie sicher, dass das Tool seine Ausgabe kennzeichnet, und konzentrieren Sie sich auf Ihre eigenen Deepfake-/Öffentlichkeits-Pflichten unten. Ausnahme: nicht erforderlich, wenn die KI nur Standard-Bearbeitung unterstützt oder die Eingabe nicht wesentlich verändert. (Eine vorgeschlagene Schonfrist würde bestehende Inhalte auf den 2. Dez 2026 verschieben — noch nicht beschlossen.)"]);
-  if(answers.deepfake==="yes") obligations.push(["aug","Deepfakes offenlegen","Realistische KI-erzeugte oder manipulierte Bilder/Audio/Video müssen als künstlich erzeugt offengelegt werden (Betreiberpflicht, Art. 50(4)). Für offensichtlich künstlerische, kreative, satirische oder fiktionale Werke gilt eine reduzierte/angepasste Offenlegung."]);
-  if(answers.news==="yes") obligations.push(["aug","KI-erzeugte Texte von öffentlichem Interesse offenlegen","KI-erzeugte Texte, die die Öffentlichkeit über Angelegenheiten von öffentlichem Interesse informieren, müssen gekennzeichnet werden — außer ein Mensch hat die redaktionelle Verantwortung übernommen. Betreiberpflicht, Art. 50(4)."]);
+  if(answers.chatbot==="yes") obligations.push(["aug","Nutzer darüber informieren, dass sie mit einer KI interagieren","Dein Chatbot/Assistent muss klar offenlegen, dass es sich um ein KI-System handelt — spätestens bei der ersten Interaktion (ausser es ist für eine verständige Person offensichtlich). Anbieterpflicht, Art. 50(1)."]);
+  if(answers.gen==="yes"||answers.gen==="some") obligations.push(["dec","KI-Inhalte maschinenlesbar kennzeichnen","Synthetische Texte, Bilder, Audio oder Video müssen maschinenlesbar als künstlich erzeugt/manipuliert gekennzeichnet werden (Art. 50(2)). Das bindet den Anbieter des generativen Systems. Wenn du nur Drittanbieter-Tools nutzt (z. B. ChatGPT), bist du meist Betreiber — sorge dafür, dass das Tool seine Ausgabe kennzeichnet, und konzentriere dich auf deine Deepfake-/Öffentlichkeits-Pflichten. Ausnahme: nicht erforderlich, wenn die KI nur Standard-Bearbeitung unterstützt oder die Eingabe nicht wesentlich verändert. (Vorgeschlagene Schonfrist für Bestehendes: 2. Dez 2026.)"]);
+  if(answers.deepfake==="yes") obligations.push(["aug","Deepfakes offenlegen","Realistische KI-erzeugte oder manipulierte Bilder/Audio/Video müssen als künstlich erzeugt offengelegt werden (Betreiberpflicht, Art. 50(4)). Für offensichtlich künstlerische, kreative, satirische oder fiktionale Werke gilt eine reduzierte Offenlegung."]);
+  if(answers.news==="yes") obligations.push(["aug","KI-erzeugte Texte von öffentlichem Interesse offenlegen","KI-erzeugte Texte, die die Öffentlichkeit über Angelegenheiten von öffentlichem Interesse informieren, müssen gekennzeichnet werden — ausser ein Mensch hat die redaktionelle Verantwortung übernommen. Betreiberpflicht, Art. 50(4)."]);
 
-  // Readiness-Score
   let score, verdict, color, sub;
   if(obligations.length===0){
     qbox.innerHTML='<div class="ringbox"><div class="ring" style="--p:100;--rc:var(--good)"><b>✓</b></div>'+
       '<div><div class="verdict" style="color:var(--good)">Keine spezifischen Artikel-50-Auslöser erkannt</div>'+
-      '<small>Auf Basis Ihrer Antworten sind die genannten Transparenzpflichten heute nicht ausgelöst. Legen Sie dies ab und prüfen Sie erneut, wenn Sie KI-Funktionen ergänzen.</small></div></div>';
+      '<small>Auf Basis deiner Antworten sind die genannten Transparenzpflichten heute nicht ausgelöst. Lege dies ab und prüfe erneut, wenn du KI-Funktionen ergänzt.</small></div></div>';
     return;
   }
   const base = answers.done==="done"?92: answers.done==="some"?55:22;
   score = base - Math.max(0,(obligations.length-1)*4);
   score = Math.max(8,Math.min(98,score));
-  if(score>=85){ color="var(--good)"; verdict="Weitgehend bereit"; sub="Gut — prüfen Sie, dass jeder Punkt unten tatsächlich umgesetzt und dokumentiert ist."; }
+  if(score>=85){ color="var(--good)"; verdict="Weitgehend bereit"; sub="Gut — prüfe, dass jeder Punkt unten tatsächlich umgesetzt und dokumentiert ist."; }
   else if(score>=45){ color="var(--warn)"; verdict="Teilweise bereit"; sub="Es gibt Lücken bis zur Frist. Das Toolkit deckt jede davon ab."; }
-  else { color="var(--bad)"; verdict="Handlungsbedarf"; sub="Mehrere Pflichten gelten und wenig ist umgesetzt. Fangen Sie jetzt an — das Toolkit liefert fertige Formulierungen."; }
+  else { color="var(--bad)"; verdict="Handlungsbedarf"; sub="Mehrere Pflichten gelten und wenig ist umgesetzt. Fang jetzt an — das Toolkit liefert fertige Formulierungen."; }
 
   const lis = obligations.map(o=>{
     const tag = o[0]==="aug"?'<span class="tag aug">bis 2. Aug 2026</span>':'<span class="tag dec">Kennzeichnung — 2. Dez 2026 (vorgeschlagen)</span>';
@@ -326,14 +433,14 @@ function showResult(){
   qbox.innerHTML =
     '<div class="ringbox"><div class="ring" style="--p:'+score+';--rc:'+color+'"><b>'+score+'</b></div>'+
     '<div><div class="verdict" style="color:'+color+'">'+verdict+'<small>'+sub+'</small></div></div></div>'+
-    '<p style="font-weight:700;margin:18px 0 0">Durch Ihre Antworten ausgelöste Pflichten ('+obligations.length+'):</p>'+
+    '<p style="font-weight:700;margin:18px 0 0">Durch deine Antworten ausgelöste Pflichten ('+obligations.length+'):</p>'+
     '<ul class="obl">'+lis+'</ul>'+
     '<div class="cap"><h4>📩 Vollständigen Readiness-Report + Checkliste erhalten (kostenlos)</h4>'+
-    '<p>Wir senden Ihnen dieses Ergebnis als PDF mit einer Schritt-für-Schritt-Checkliste für jede Pflicht oben.</p>'+
-    '<form class="capform" id="capform"><input type="email" id="email" placeholder="sie@firma.com" required>'+
+    '<p>Wir senden dir dieses Ergebnis als PDF mit einer Schritt-für-Schritt-Checkliste für jede Pflicht oben.</p>'+
+    '<form class="capform" id="capform"><input type="email" id="email" placeholder="du@firma.com" required>'+
     '<button class="btn" type="submit">Report zusenden</button></form>'+
     '<div style="font-size:12px;color:var(--muted);margin-top:8px" id="capnote">Kein Spam. Jederzeit abbestellbar.</div></div>'+
-    '<div style="text-align:center;margin-top:18px"><a class="btn lg" href="#pricing">Alles davon mit dem Toolkit lösen →</a></div>';
+    '<div style="text-align:center;margin-top:18px"><a class="btn lg" href="#preise">Alles davon mit dem Toolkit lösen →</a></div>';
 
   document.getElementById("capform").addEventListener("submit",function(e){
     e.preventDefault();
@@ -342,12 +449,10 @@ function showResult(){
     if(CONFIG.captureEndpoint){
       fetch(CONFIG.captureEndpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
         body:JSON.stringify({email,obligations:obligations.map(o=>o[1]),score})})
-        .then(()=>{note.innerHTML="✅ Gesendet — schauen Sie gleich in Ihr Postfach.";document.getElementById("capform").reset();})
+        .then(()=>{note.innerHTML="✅ Gesendet — schau gleich in dein Postfach.";document.getElementById("capform").reset();})
         .catch(()=>{note.innerHTML="Etwas ist schiefgelaufen — bitte erneut versuchen.";});
-    } else if(CONFIG.contactEmail){
-      window.location.href="mailto:"+CONFIG.contactEmail+"?subject=Artikel%2050%20Readiness-Report&body=Bitte%20senden%20Sie%20mir%20meinen%20Report.%20E-Mail:%20"+encodeURIComponent(email);
     } else {
-      note.innerHTML="✅ Lokal erfasst (Demo-Modus — CONFIG.captureEndpoint setzen, um live zu gehen).";
+      note.innerHTML="✅ Lokal erfasst (Demo-Modus).";
       document.getElementById("capform").reset();
     }
   });
@@ -358,11 +463,10 @@ function wireBuy(id,url,label){
   const el=document.getElementById(id); if(!el) return;
   if(url&&url!=="#"){ el.href=url; el.addEventListener("click",()=>track("buy_click",{plan:label})); }
   else el.addEventListener("click",e=>{e.preventDefault();track("buy_click",{plan:label,demo:true});
-    alert("Setzen Sie CONFIG.buy"+label+"Url auf Ihren Stripe/Gumroad-Link, um den Checkout zu aktivieren.");});
+    alert("Zahlung wird in Kürze aktiviert. Hinterlasse im Gratis-Check deine E-Mail — wir melden uns, sobald das Toolkit bestellbar ist.");});
 }
 wireBuy("buy-starter",CONFIG.buyStarterUrl,"Starter");
 wireBuy("buy-pro",CONFIG.buyProUrl,"Pro");
-if(CONFIG.contactEmail){ const c=document.getElementById("contact"); if(c) c.href="mailto:"+CONFIG.contactEmail; }
 document.getElementById("yr").textContent=new Date().getFullYear();
 renderQ(); track("view",{});
 </script>
