@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClearLabel — EU AI Act Article 50 Readiness Check & Compliance Toolkit</title>
+<meta name="description" content="Free check: which EU AI Act Article 50 transparency obligations apply to your business before the 2 August 2026 deadline? Get a personalised readiness report plus a done-for-you disclosure & documentation toolkit.">
+<meta name="keywords" content="EU AI Act Article 50, AI transparency obligations, chatbot disclosure, AI content labelling, deepfake disclosure, AI Act compliance toolkit, 2 August 2026">
+<meta property="og:title" content="Are you ready for EU AI Act Article 50? (2 Aug 2026)">
+<meta property="og:description" content="Free 2-minute readiness check + done-for-you disclosure and documentation toolkit.">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="de" href="./index.html">
+<link rel="alternate" hreflang="en" href="./en.html">
+<link rel="alternate" hreflang="x-default" href="./index.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏷️</text></svg>">
+<style>
+  :root{
+    --bg:#f6f8fc; --card:#ffffff; --ink:#0f1b34; --ink2:#43506b; --muted:#6b7896;
+    --line:#e2e8f4; --brand:#1453c4; --brand-d:#0e3d96; --accent:#0a7d57;
+    --warn:#b45309; --bad:#b91c1c; --good:#0a7d57; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+  header{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .logo{font-weight:800;font-size:20px;letter-spacing:-.3px;color:var(--ink);display:flex;gap:8px;align-items:center}
+  .logo b{color:var(--brand)}
+  .nav-links a{color:var(--ink2);font-size:14px;margin-left:20px;font-weight:600}
+  .nav-cta{background:var(--brand);color:#fff!important;padding:8px 16px;border-radius:8px;font-weight:700}
+  .nav-cta:hover{background:var(--brand-d);text-decoration:none}
+  .deadline-bar{background:#fff7ed;border-bottom:1px solid #fed7aa;color:var(--warn);
+    text-align:center;font-size:13.5px;font-weight:600;padding:8px}
+  .hero{text-align:center;padding:48px 0 18px}
+  .kicker{display:inline-block;background:#eef3ff;color:var(--brand-d);font-weight:700;font-size:13px;
+    padding:6px 14px;border-radius:999px;letter-spacing:.2px}
+  h1{font-size:clamp(28px,4.6vw,44px);line-height:1.12;letter-spacing:-1px;margin:16px auto;max-width:760px}
+  .sub{color:var(--ink2);font-size:clamp(16px,2.2vw,19px);max-width:620px;margin:0 auto}
+  .trust{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin:22px 0 0;color:var(--muted);font-size:13.5px}
+  .trust span{display:inline-flex;gap:6px;align-items:center}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:0 1px 2px rgba(16,27,52,.04),0 12px 32px rgba(16,27,52,.06)}
+  .checker{padding:26px;margin:30px 0}
+  .checker h2{margin:0 0 4px;font-size:23px}
+  .checker .lead{color:var(--ink2);margin:0 0 18px;font-size:15px}
+  .progress{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin-bottom:22px}
+  .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--accent));width:0;transition:width .35s}
+  .q{font-size:19px;font-weight:700;margin:0 0 6px}
+  .qhint{color:var(--muted);font-size:14px;margin:0 0 18px}
+  .opts{display:grid;gap:10px}
+  .opt{border:1.5px solid var(--line);border-radius:10px;padding:14px 16px;cursor:pointer;font-size:15.5px;
+    font-weight:600;color:var(--ink2);background:#fff;transition:.15s;text-align:left}
+  .opt:hover{border-color:var(--brand);background:#f7faff;color:var(--ink)}
+  .qnav{display:flex;justify-content:space-between;align-items:center;margin-top:20px}
+  .qnav button{background:none;border:none;color:var(--muted);font-size:14px;cursor:pointer;font-weight:600}
+  .qnav .step{color:var(--muted);font-size:13px}
+  .ringbox{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+  .ring{--p:0;--rc:var(--brand);width:104px;height:104px;border-radius:50%;flex:none;
+    background:conic-gradient(var(--rc) calc(var(--p)*1%),#e8eefc 0);display:grid;place-items:center;position:relative}
+  .ring::after{content:"";position:absolute;inset:10px;border-radius:50%;background:#fff}
+  .ring b{position:relative;z-index:1;font-size:25px}
+  .verdict{font-size:21px;font-weight:800}
+  .verdict small{display:block;font-weight:500;color:var(--ink2);font-size:14px;margin-top:3px}
+  .obl{list-style:none;padding:0;margin:18px 0 0}
+  .obl li{border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:9px;padding:13px 15px;margin-bottom:10px}
+  .obl b{display:block;font-size:15px}
+  .obl span{color:var(--ink2);font-size:14px}
+  .tag{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}
+  .tag.aug{background:#fef2f2;color:var(--bad)}
+  .tag.dec{background:#fff7ed;color:var(--warn)}
+  .cap{margin-top:22px;padding:18px;background:#f7faff;border:1px dashed #b9cdf2;border-radius:12px}
+  .cap h4{margin:0 0 6px}.cap p{margin:0 0 12px;color:var(--ink2);font-size:14px}
+  .capform{display:flex;gap:10px;flex-wrap:wrap}
+  .capform input{flex:1;min-width:220px;padding:12px 14px;border:1px solid var(--line);border-radius:9px;font-size:15px}
+  .btn{display:inline-block;cursor:pointer;border:none;border-radius:9px;padding:13px 20px;font-weight:700;
+    font-size:15px;background:var(--brand);color:#fff}
+  .btn:hover{background:var(--brand-d);text-decoration:none}
+  .btn.lg{padding:15px 26px;font-size:16px}
+  .btn.ghost{background:#fff;color:var(--brand);border:1.5px solid var(--brand)}
+  section{padding:30px 0}
+  .sec-h{text-align:center;max-width:640px;margin:0 auto 26px}
+  .sec-h h2{font-size:28px;margin:0 0 8px;letter-spacing:-.5px}
+  .sec-h p{color:var(--ink2);margin:0}
+  .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:760px){.price-grid{grid-template-columns:1fr}}
+  .plan{padding:26px;display:flex;flex-direction:column}
+  .plan.feat{border:2px solid var(--brand);position:relative}
+  .plan .badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--brand);
+    color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:99px}
+  .plan h3{margin:0 0 4px;font-size:19px}.plan .for{color:var(--muted);font-size:13.5px;margin:0 0 14px}
+  .plan .amt{font-size:36px;font-weight:800}.plan .amt s{color:var(--muted);font-size:20px;font-weight:500;margin-right:8px}
+  .plan ul{list-style:none;padding:0;margin:16px 0 22px;flex:1}
+  .plan li{padding:7px 0 7px 26px;position:relative;font-size:14.5px;color:var(--ink2)}
+  .plan li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+  .feat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:760px){.feat-row{grid-template-columns:1fr}}
+  .feat-row .card{padding:22px}.feat-row h4{margin:0 0 6px;font-size:16px}.feat-row p{margin:0;color:var(--ink2);font-size:14px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 18px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:700;padding:14px 0;font-size:15.5px}
+  details p{color:var(--ink2);font-size:14.5px;margin:0 0 14px}
+  .disclaimer{background:#fbfcfe;border:1px solid var(--line);border-radius:12px;padding:18px 20px;
+    color:var(--muted);font-size:13px;margin:26px 0}
+  footer{border-top:1px solid var(--line);background:var(--card);padding:28px 0;color:var(--muted);font-size:13px;text-align:center}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<div class="deadline-bar">⏳ EU AI Act Article 50 transparency obligations apply from 2 August 2026 · a grace period to 2 December 2026 for marking existing AI content is <u>proposed</u> (Digital Omnibus — not yet adopted)</div>
+<header>
+  <div class="wrap nav">
+    <div class="logo">🏷️ Clear<b>Label</b></div>
+    <div class="nav-links">
+      <a href="#check">Free check</a>
+      <a href="#pricing">Toolkit</a>
+      <a href="#faq">FAQ</a>
+      <a href="index.html" title="Deutsche Version">DE</a>
+      <a class="nav-cta" href="#pricing">Get compliant</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <span class="kicker">EU AI Act · Article 50 · Transparency</span>
+    <h1>Does the EU AI Act apply to your business — and what must you do before 2 August 2026?</h1>
+    <p class="sub">Most companies running a chatbot or using AI to create content now fall under Article 50's transparency rules. Take the free 2-minute check to see exactly which obligations apply to you — then fix them with a done-for-you toolkit.</p>
+    <div class="trust">
+      <span>✓ Free, no signup to start</span>
+      <span>✓ Built on official EU sources</span>
+      <span>✓ Plain language, ready to implement</span>
+    </div>
+  </section>
+
+  <div class="card checker" id="check">
+    <h2>Article 50 Readiness Check</h2>
+    <p class="lead">7 quick questions. We map your answers to the actual obligations in Article 50. Nothing is uploaded — this runs entirely in your browser.</p>
+    <div class="progress"><i id="bar"></i></div>
+    <div id="qbox"></div>
+    <div class="qnav">
+      <button id="back" class="hidden">← Back</button>
+      <span class="step" id="stepnum"></span>
+    </div>
+  </div>
+
+  <section>
+    <div class="feat-row">
+      <div class="card"><h4>🏷️ Disclosure snippets</h4><p>Copy-paste chatbot notices, AI-content labels and deepfake disclosures in EN, DE, FR and IT.</p></div>
+      <div class="card"><h4>📄 Documentation templates</h4><p>An Article 50 compliance register and internal records you can keep on file to show good faith.</p></div>
+      <div class="card"><h4>🛠️ Implementation guides</h4><p>Where to place disclosures and how to approach machine-readable marking, step by step.</p></div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="sec-h">
+      <h2>The Article 50 Compliance Toolkit</h2>
+      <p>One-time purchase. Instant download. Everything you need to put the transparency obligations in place — without paying agency rates.</p>
+    </div>
+    <div class="price-grid">
+      <div class="card plan">
+        <h3>Starter</h3>
+        <p class="for">For a single chatbot or AI-content workflow</p>
+        <div class="amt">CHF 49</div>
+        <ul>
+          <li>Article 50 plain-language guide (provider & deployer roles)</li>
+          <li>Chatbot AI-disclosure snippets (EN/DE/FR/IT)</li>
+          <li>AI-content label & deepfake disclosure wording</li>
+          <li>Readiness checklist (PDF)</li>
+          <li>Key deadlines calendar (2 Aug & 2 Dec 2026)</li>
+        </ul>
+        <a class="btn ghost" id="buy-starter" href="#">Get Starter →</a>
+      </div>
+      <div class="card plan feat">
+        <div class="badge">Most complete</div>
+        <h3>Pro Toolkit</h3>
+        <p class="for">For businesses with multiple AI touchpoints</p>
+        <div class="amt"><s>CHF 199</s>CHF 129</div>
+        <ul>
+          <li>Everything in Starter</li>
+          <li>Article 50 compliance <b>register & documentation templates</b></li>
+          <li>Machine-readable marking implementation guide</li>
+          <li>Per-content-type decision flowchart (text, image, audio, video)</li>
+          <li>Internal staff one-pager + responsibility matrix</li>
+          <li>Free updates as Commission guidance evolves</li>
+        </ul>
+        <a class="btn lg" id="buy-pro" href="#">Get the Pro Toolkit →</a>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <b>Important — not legal advice.</b> ClearLabel provides informational templates and general guidance to help you understand and prepare for the transparency obligations in Article 50 of Regulation (EU) 2024/1689 (the EU AI Act). It does not constitute legal advice and does not create a lawyer–client relationship. Obligations depend on your specific circumstances and on Commission guidance and the Code of Practice, which continue to develop. For binding assessments, consult a qualified lawyer. Primary sources: the
+      <a href="https://artificialintelligenceact.eu/article/50/" target="_blank" rel="noopener">Article 50 text</a>,
+      the <a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">Code of Practice on AI-generated content</a>, and the
+      <a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50" target="_blank" rel="noopener">AI Act Service Desk</a>.
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="sec-h"><h2>EU AI Act Article 50 — quick answers</h2></div>
+    <details open><summary>What is Article 50 of the EU AI Act?</summary><p>Article 50 sets out the <b>transparency obligations</b> of the EU AI Act. It requires that people are told when they are interacting with an AI system (e.g. a chatbot), that AI-generated or AI-manipulated synthetic content is marked as such, that deepfakes are disclosed, and that AI-generated text published to inform the public on matters of public interest is labelled, unless a human took editorial responsibility.</p></details>
+    <details><summary>When does Article 50 start to apply?</summary><p>The Article 50 transparency obligations apply from <b>2 August 2026</b> (per Article 113). Separately, the <b>Digital Omnibus</b> — on which the European Parliament and Council reached a <b>provisional agreement on 7 May 2026</b> — would give generative AI systems already on the market before 2 August 2026 until <b>2 December 2026</b> to meet the machine-readable marking requirement in Article 50(2). That extension is <b>not yet adopted</b> (still subject to formal endorsement and publication in the Official Journal), so treat 2 Dec 2026 as expected but not final, and re-check before relying on it.</p></details>
+    <details><summary>Does Article 50 apply to my small business?</summary><p>If your product or service reaches people in the EU and you run a chatbot, generate marketing content with AI, or publish AI-generated media, Article 50 likely applies regardless of company size. It is not limited to "high-risk" AI. The free check above shows which specific obligations are triggered by what you actually do.</p></details>
+    <details><summary>What is the difference between a "provider" and a "deployer"?</summary><p>A <b>provider</b> develops or places an AI system on the market (e.g. you build a chatbot). A <b>deployer</b> uses an AI system under its own authority (e.g. you publish AI-generated images). The obligations differ: providers handle interaction notices and output marking; deployers handle deepfake and public-interest-text disclosure. If you only <b>use</b> third-party tools like ChatGPT, you are usually a deployer.</p></details>
+    <details><summary>Are there penalties for non-compliance?</summary><p>The AI Act provides for administrative fines for breaches of the transparency obligations — up to <b>EUR 15 million or 3% of worldwide annual turnover</b>, whichever is higher (Article 99), applied by national authorities. In practice the near-term risk for most SMEs is a complaint or enquiry plus reputational exposure. Putting clear disclosures and documentation in place is a low-cost way to show good faith.</p></details>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr"></span> ClearLabel · Informational toolkit for EU AI Act Article 50 readiness · Not legal advice</div>
+    <div style="margin-top:8px"><a href="#check">Free check</a> · <a href="#pricing">Toolkit</a> · <a href="#faq">FAQ</a> · <a href="index.html">Deutsch</a> · <a id="contact" href="#">Contact</a></div>
+  </div>
+</footer>
+
+<script>
+const CONFIG = {
+  buyStarterUrl: "#",
+  buyProUrl: "#",
+  captureEndpoint: "",
+  contactEmail: "",
+  analyticsEndpoint: "",
+  brand: "ClearLabel"
+};
+
+function track(ev, meta){
+  try{ const l=JSON.parse(localStorage.getItem("cl_events")||"[]");
+    l.push({ev,meta:meta||{},t:Date.now(),ref:document.referrer||"direct"});
+    localStorage.setItem("cl_events",JSON.stringify(l.slice(-500))); }catch(e){}
+  if(CONFIG.analyticsEndpoint){ try{ navigator.sendBeacon(CONFIG.analyticsEndpoint,JSON.stringify({ev,meta,ts:Date.now()})); }catch(e){} }
+}
+
+const QUESTIONS = [
+  { id:"eu",   q:"Do your products or services reach people located in the EU?",
+    hint:"Article 50 applies based on whether AI outputs reach people in the EU — not where your company is registered.",
+    opts:[["yes","Yes — we have EU customers or users"],["no","No — no EU exposure at all"]] },
+  { id:"chatbot", q:"Do you run a chatbot, virtual assistant, or any AI that interacts directly with people?",
+    hint:"Support bots, website assistants, AI voice agents, AI email responders.",
+    opts:[["yes","Yes"],["no","No"]] },
+  { id:"gen", q:"Does your business create text, images, audio or video using AI tools?",
+    hint:"Includes ChatGPT, image/video generators, AI voiceovers — for marketing, social, product or internal content.",
+    opts:[["yes","Yes, regularly"],["some","Occasionally"],["no","No"]] },
+  { id:"deepfake", q:"Do you publish AI-generated or AI-edited images, audio or video that look realistic?",
+    hint:"Realistic synthetic or manipulated media that a viewer could mistake for genuine is treated as a 'deepfake'.",
+    opts:[["yes","Yes"],["no","No"]] },
+  { id:"news", q:"Do you publish AI-generated text to inform the public on news or matters of public interest?",
+    hint:"E.g. AI-assisted news, public-interest articles. Routine marketing copy is generally not in scope here.",
+    opts:[["yes","Yes"],["no","No"]] },
+  { id:"prelive", q:"Are these AI systems or outputs already live now, before 2 August 2026?",
+    hint:"This affects whether the proposed 2 December 2026 extension for machine-readable marking is relevant to you.",
+    opts:[["yes","Yes, already live"],["no","No, launching later / not yet"]] },
+  { id:"done", q:"Have you already implemented AI disclosures, content marking and internal documentation?",
+    hint:"Be honest — this sets your readiness score.",
+    opts:[["done","Yes, all in place"],["some","Partly"],["none","Not yet"]] }
+];
+
+let step=0; const answers={};
+const qbox=document.getElementById("qbox"), bar=document.getElementById("bar"),
+      backBtn=document.getElementById("back"), stepnum=document.getElementById("stepnum");
+
+function renderQ(){
+  const Q=QUESTIONS[step];
+  bar.style.width=((step)/(QUESTIONS.length))*100+"%";
+  stepnum.textContent="Question "+(step+1)+" of "+QUESTIONS.length;
+  backBtn.classList.toggle("hidden",step===0);
+  qbox.innerHTML='<div class="q">'+Q.q+'</div><div class="qhint">'+Q.hint+'</div><div class="opts">'+
+    Q.opts.map(o=>'<button class="opt" data-v="'+o[0]+'">'+o[1]+'</button>').join("")+'</div>';
+  qbox.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{
+    answers[Q.id]=b.dataset.v; step++;
+    if(step>=QUESTIONS.length){ showResult(); } else { renderQ(); }
+  }));
+}
+backBtn.addEventListener("click",()=>{ if(step>0){step--;renderQ();} });
+
+function showResult(){
+  bar.style.width="100%"; backBtn.classList.add("hidden"); stepnum.textContent="";
+  track("check_complete",answers);
+
+  if(answers.eu==="no"){
+    qbox.innerHTML='<div class="ringbox"><div class="ring" style="--p:100;--rc:var(--good)"><b>—</b></div>'+
+      '<div><div class="verdict" style="color:var(--good)">Likely out of scope</div>'+
+      '<small>You indicated no EU exposure. Article 50 is triggered when AI outputs reach people in the EU. If that changes, re-run this check.</small></div></div>'+
+      '<p style="color:var(--muted);font-size:14px;margin-top:16px">If you expand into the EU later, the obligations below would start to apply.</p>';
+    return;
+  }
+
+  const obligations=[];
+  if(answers.chatbot==="yes") obligations.push(["aug","Inform users they are interacting with AI","Your chatbot/assistant must clearly disclose it is an AI system, at the latest at first interaction (unless obvious to a reasonably informed person). Provider obligation, Art. 50(1)."]);
+  if(answers.gen==="yes"||answers.gen==="some") obligations.push(["dec","Marking of AI-generated content as machine-readable","Synthetic text, image, audio or video must be marked as artificially generated/manipulated in a machine-readable way (Art. 50(2)). This binds the <b>provider</b> of the generative system. If you only <b>use</b> third-party tools (e.g. ChatGPT), you are usually a deployer — ensure the tool marks its output, and focus on your own deepfake/public-interest duties below. Exemption: not required where the AI only assists standard editing or does not substantially alter the input. (A proposed grace period would push existing content to 2 Dec 2026 — not yet adopted.)"]);
+  if(answers.deepfake==="yes") obligations.push(["aug","Disclose deepfakes","Realistic AI-generated or manipulated images/audio/video must be disclosed as artificially generated (Deployer obligation, Art. 50(4)). Reduced/adapted disclosure applies for evidently artistic, creative, satirical or fictional work."]);
+  if(answers.news==="yes") obligations.push(["aug","Disclose AI-generated public-interest text","AI-generated text published to inform the public on matters of public interest must be labelled, unless a human took editorial responsibility. Deployer obligation, Art. 50(4)."]);
+
+  let score, verdict, color, sub;
+  if(obligations.length===0){
+    qbox.innerHTML='<div class="ringbox"><div class="ring" style="--p:100;--rc:var(--good)"><b>✓</b></div>'+
+      '<div><div class="verdict" style="color:var(--good)">No specific Article 50 triggers detected</div>'+
+      '<small>Based on your answers, the listed transparency duties are not triggered today. Keep this on file and re-check when you add AI features.</small></div></div>';
+    return;
+  }
+  const base = answers.done==="done"?92: answers.done==="some"?55:22;
+  score = base - Math.max(0,(obligations.length-1)*4);
+  score = Math.max(8,Math.min(98,score));
+  if(score>=85){ color="var(--good)"; verdict="Largely ready"; sub="Good — verify each item below is actually in place and documented."; }
+  else if(score>=45){ color="var(--warn)"; verdict="Partly ready"; sub="You have gaps to close before the deadline. The toolkit covers each one."; }
+  else { color="var(--bad)"; verdict="Action needed"; sub="Several obligations apply and little is in place yet. Start now — the toolkit gives you ready-made wording."; }
+
+  const lis = obligations.map(o=>{
+    const tag = o[0]==="aug"?'<span class="tag aug">by 2 Aug 2026</span>':'<span class="tag dec">marking — 2 Dec 2026 (proposed)</span>';
+    return '<li><b>'+o[1]+tag+'</b><span>'+o[2]+'</span></li>';
+  }).join("");
+
+  qbox.innerHTML =
+    '<div class="ringbox"><div class="ring" style="--p:'+score+';--rc:'+color+'"><b>'+score+'</b></div>'+
+    '<div><div class="verdict" style="color:'+color+'">'+verdict+'<small>'+sub+'</small></div></div></div>'+
+    '<p style="font-weight:700;margin:18px 0 0">Obligations triggered by your answers ('+obligations.length+'):</p>'+
+    '<ul class="obl">'+lis+'</ul>'+
+    '<div class="cap"><h4>📩 Get your full readiness report + checklist (free)</h4>'+
+    '<p>We\'ll email you this result as a PDF with a step-by-step checklist for each obligation above.</p>'+
+    '<form class="capform" id="capform"><input type="email" id="email" placeholder="you@company.com" required>'+
+    '<button class="btn" type="submit">Email me the report</button></form>'+
+    '<div style="font-size:12px;color:var(--muted);margin-top:8px" id="capnote">No spam. Unsubscribe anytime.</div></div>'+
+    '<div style="text-align:center;margin-top:18px"><a class="btn lg" href="#pricing">Fix all of this with the toolkit →</a></div>';
+
+  document.getElementById("capform").addEventListener("submit",function(e){
+    e.preventDefault();
+    const email=document.getElementById("email").value.trim(), note=document.getElementById("capnote");
+    track("lead",{obligations:obligations.length,score});
+    if(CONFIG.captureEndpoint){
+      fetch(CONFIG.captureEndpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+        body:JSON.stringify({email,obligations:obligations.map(o=>o[1]),score})})
+        .then(()=>{note.innerHTML="✅ Sent — check your inbox shortly.";document.getElementById("capform").reset();})
+        .catch(()=>{note.innerHTML="Something went wrong — please try again.";});
+    } else if(CONFIG.contactEmail){
+      window.location.href="mailto:"+CONFIG.contactEmail+"?subject=Article%2050%20readiness%20report&body=Please%20send%20my%20report.%20Email:%20"+encodeURIComponent(email);
+    } else {
+      note.innerHTML="✅ Captured locally (demo mode — set CONFIG.captureEndpoint to go live).";
+      document.getElementById("capform").reset();
+    }
+  });
+}
+
+function wireBuy(id,url,label){
+  const el=document.getElementById(id); if(!el) return;
+  if(url&&url!=="#"){ el.href=url; el.addEventListener("click",()=>track("buy_click",{plan:label})); }
+  else el.addEventListener("click",e=>{e.preventDefault();track("buy_click",{plan:label,demo:true});
+    alert("Set CONFIG.buy"+label+"Url to your Stripe/Gumroad link to enable checkout.");});
+}
+wireBuy("buy-starter",CONFIG.buyStarterUrl,"Starter");
+wireBuy("buy-pro",CONFIG.buyProUrl,"Pro");
+if(CONFIG.contactEmail){ const c=document.getElementById("contact"); if(c) c.href="mailto:"+CONFIG.contactEmail; }
+document.getElementById("yr").textContent=new Date().getFullYear();
+renderQ(); track("view",{});
+</script>
+</body>
+</html>
